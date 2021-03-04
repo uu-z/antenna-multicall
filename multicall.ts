@@ -9,7 +9,7 @@ export interface Call {
   callData: string;
 }
 export interface CallInput {
-  abi: string;
+  abi: any;
   target: string;
   method: string;
   params?: any[];

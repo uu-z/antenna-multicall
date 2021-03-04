@@ -12,7 +12,7 @@ const main = async () => {
   });
   const res = await multiCall.batch([
     {
-      abi: JSON.stringify(xrc20ABI),
+      abi: xrc20ABI,
       target: fromString("io1f4acssp65t6s90egjkzpvrdsrjjyysnvxgqjrh").stringEth(),
       method: "totalSupply",
       params: [],
@@ -20,7 +20,7 @@ const main = async () => {
       // params: [fromString("io10zgz26gss20vc8xa2z44pv0f9mys52x62npwz9").stringEth()],
     },
     {
-      abi: JSON.stringify(xrc20ABI),
+      abi: xrc20ABI,
       target: fromString("io1f4acssp65t6s90egjkzpvrdsrjjyysnvxgqjrh").stringEth(),
       // method: "totalSupply",
       // params: [],
